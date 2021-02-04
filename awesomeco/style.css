@@ -1,0 +1,31 @@
+     body {
+        background-color: #FFF;
+        color: #333;
+      }
+      body > header, body > footer, nav {
+      text-align: center;
+      }
+      nav {
+        border-bottom: 1px solid #DDD;
+      }
+      nav > a {
+        color: #F00;
+        font-size: 1.5em;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+      nav > a:visited {
+        color: #FF7373;
+      }
+      nav > a:hover, nav > a:focus {
+        background-color: #DDD;
+        color: #990000;
+      }
+      body > footer {
+        background-color: #BC7277;
+        color: #FFF;
+        font-size: 12px;
+      }
+      h1, h2, h4 p {
+        margin: 0 0 20px 0;
+      }
