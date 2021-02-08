@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>JavaJam Jobs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/javajam.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>JavaJam Coffee House Jobs</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
+      <main>
+        <p>Want to work at JavaJam? Fill out the form below to start your application.<br>Required fields are marked with an asterisk *.</p>
+        <form action="https://webdevbasics.net/scripts/javajam.php">
+          <label for="myName">*Name:</label>
+          <input type="text" id="myName" name="myName" required><br>
+          <label for="myEmail">*Email:</label>
+          <input type="email" id="myEmail" name="myEmail" required><br>
+          <label for="myStart">Start Date:</label>
+          <input type="date" id="myStart" name="myStart"><br>
+          <label for="myExperience">*Experience:</label>
+          <textarea id="myExperience" name="myExperience" required></textarea>
+          <input type="submit" value="Apply Now">
+        </form>
+      </main>
+      <footer>
+        <small>Copyright &copy; 2020 JavaJam Coffee House</small>
+        <br>
+        <small><a href="mailto:lgriffith@student.cvtc.edu">lgriffith1@student.cvtc.edu</a></small>
+      </footer>
+      <!-- comment time -->
+    </div>
+  </body>
+</html>
