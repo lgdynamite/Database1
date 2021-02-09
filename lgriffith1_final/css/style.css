@@ -1,0 +1,236 @@
+body{
+  background-color:#913418;
+  background-image: url('../img/marsSurface.jpg');
+  color:#af5d17;
+  font-family:Verdana, serif, "Times New Roman";
+}
+#wrapper{
+  box-shadow: 3px 3px 3px #2E0000;
+  margin: 0 auto;
+  width: 80%;
+  background-color:#E2D2B0;
+  min-width: 960px;
+  max-width: 2048px;
+}
+.mobile{
+  display: none;
+}
+.desktop{
+  display: inline;
+}
+header{
+  display: block;
+  background-color:#27586B;
+}
+nav{
+  display: block;
+  float:left;
+  width:160px;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
+}
+nav > ul {
+  list-style: none;
+  padding-left:0;
+  font-size:1.2em;
+}
+nav > ul > li > a {
+  text-decoration:none;
+      }
+nav > ul > li > a:link{
+  color:#795240;
+}
+nav > ul > li > a:visited{
+  color:#A58366;
+}
+nav > ul > li > a:hover, a:focus{
+  color:#F5F5DC;
+}
+main{
+  display: block;
+  background-color:#F5F5DC;
+  margin-left:175px;
+  padding:20px;
+  display: block;
+}
+main > article{
+  overflow: auto;
+  font-size:90%;
+  padding-right:5%;
+  padding-left:5%;
+}
+main > img {
+  float:left;
+  padding-right:2em;
+}
+main > ul {
+  list-style-position: inside;
+  list-style-image: url('../img/marker.gif');
+}
+#hero{
+  height: 300px;
+  color:#F5F5DC;
+  background-image: url('../img/heroroad.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h1{
+  height:100px;
+  margin:0px;
+  background-image:url('../img/javalogo.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent:-9999px;
+  font-family:serif, Georgia, "Times New Roman";
+}
+h2{
+  font-family:serif, Georgia, "Times New Roman";
+}
+h3{
+  background-color:#E6D6A9;
+  text-transform:uppercase;
+}
+article{
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+form label{
+  float: left;
+  display:block;
+  text-align: left;
+  width: 120px;
+  padding-right: 0px;
+}
+form input{
+  display: block;
+  margin-bottom: 20px;
+}
+form textarea{
+  display: block;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 60px;
+}
+form input [type="submit"]{
+  margin-left: 130px;
+}
+dt{
+  font-weight:bold;
+}
+table{
+  margin: auto;
+  width: 80%;
+}
+table > td, th{
+  padding: 10px
+}
+tr:nth-child(odd) {
+  background-color: #D2B48C;
+}
+footer{
+  display: block;
+  font-size:.60em;
+  font-style:italic;
+  text-align:center;
+  background-color: #27586B;
+  color: #000000;
+  padding:10px;
+}
+footer > small > a:link{
+  color:#000000;
+}
+footer > small > a:visited{
+  color:#969696;
+}
+footer > small > a:hover, a:focus{
+  color:#ffffff;
+}
+/* Tablet Section */
+@media only screen and (max-width: 64em) {
+  body{
+    margin:0;
+    background-color:#D2B48C;
+    background-image: none;
+  }
+  #wrapper{
+    min-width: 0;
+    width:auto;
+    box-shadow: none;
+  }
+  h1{
+    margin:0;
+    background-image: url(../img/javalogomobile.gif)
+  }
+  main{
+    margin-left: 0;
+  }
+  nav{
+    float: none;
+    width:auto;
+    padding: 0;
+  }
+  nav > ul{
+    text-align: center;
+  }
+  nav > ul > li{
+    display: inline;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: .75em;
+    padding-right: .75em;
+  }
+}
+/*Smartphone Section*/
+@media only screen and (max-width: 37.5em) {
+  nav > ul > li{
+    display: inline-block;
+    width: 5em;
+    font-size: 120%;
+    text-align: center;
+    box-shadow: 2px 2px 2px #330000;
+    background-color: #F5F5DC;
+    margin: 1%;
+    padding: 2.5%
+  }
+  nav > ul > li > a{
+    display: block;
+  }
+  nav > ul > li > a:hover{
+    color: #333300 
+  }
+  main > a:link{
+    color:#FFFFFF;
+  }
+  main > a:visited{
+    color:#EAEAEA;
+  }
+  main > a:hover{
+    color:#FFD700;
+  }
+  article{
+    margin: 0;
+  }
+  article > a > img{
+    display:none;
+  }
+  form label{
+    float:none;
+  }
+  form input [type="submit"]{
+    margin-left: 0;
+  }
+  #hero{
+    height:auto;
+  }
+  .mobile{
+    display:inline;
+  }
+  .desktop{
+    display:none;
+  }
+}
+
+
+
