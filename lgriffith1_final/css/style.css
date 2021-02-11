@@ -26,8 +26,8 @@ header{
 nav{
   background-color:#27586B;
   height: auto;
-  padding-top:10px;
-  padding-bottom:10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
   width: auto;
   text-align:center;
   font-weight:bold;
@@ -38,7 +38,9 @@ nav > ul {
   font-size:1.2em;
 }
 nav > ul > li{
-    display: inline;
+  display: inline;
+	padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 nav > ul > li > a {
   text-decoration:none;
@@ -56,7 +58,6 @@ main{
   display: block;
   background-color:#919090;
   padding:20px;
-  display: block;
 }
 main > article{
   overflow: auto;
@@ -78,6 +79,12 @@ main > ul {
   background-image: url('../img/heroroad.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+#video{
+	text-align: center;
+}
+#video > iframe{
+	padding:10px;
 }
 h1{
   height:100px;
@@ -150,6 +157,26 @@ footer > small > a:visited{
 footer > small > a:hover, a:focus{
   color:#ffffff;
 }
+/* Scrollbar Customization*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8b4a13;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* Ultrawide Section */
 @media only screen and (min-width: 2048px){
   
@@ -191,7 +218,7 @@ footer > small > a:hover, a:focus{
 @media only screen and (max-width: 760px) {
   h1{
     margin:0;
-    background-image: url(../img/javalogomobile.gif)
+    background-image: none;
   }
   nav > ul > li{
     display: inline-block;
