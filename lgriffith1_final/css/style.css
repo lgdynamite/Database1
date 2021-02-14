@@ -1,8 +1,10 @@
-body{
-  background-color:#af5d17;
-  background-image: url('../mg/marsSurface.jpg');
+html{
+  background-image: url('../img/marsSurface.jpg');
   background-repeat: no-repeat;
-  background-position:center;
+  background-size: cover;
+  background-color:#af5d17;
+}
+body{
   color:#000000;
   font-family:Verdana, serif, "Times New Roman";
 }
@@ -71,14 +73,6 @@ main > img {
 }
 main > ul {
   list-style-position: inside;
-  list-style-image: url('../img/marker.gif');
-}
-#hero{
-  height: 300px;
-  color:#F5F5DC;
-  background-image: url('../img/heroroad.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 #video{
 	text-align: center;
@@ -177,17 +171,13 @@ footer > small > a:hover, a:focus{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* Ultrawide Section */
-@media only screen and (min-width: 2048px){
-  
-  
-}
 /* Tablet Section */
 @media only screen and (max-width: 64em) {
+  html{
+    background-image:none;
+  }
   body{
     margin:0;
-    background-color:#af5d17;
-    background-image: none;
   }
   #wrapper{
     min-width: 0;
@@ -225,8 +215,8 @@ footer > small > a:hover, a:focus{
     width: 5em;
     font-size: 120%;
     text-align: center;
-    box-shadow: 2px 2px 2px #330000;
-    background-color: #F5F5DC;
+    box-shadow: 4px 4px 4px #0d0d0d;
+    background-color: #ffffff;
     margin: 1%;
     padding: 2.5%
   }
